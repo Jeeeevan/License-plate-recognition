@@ -2,6 +2,9 @@ from fastapi import FastAPI, File, UploadFile
 import numpy as np
 from plate import loadmodel,predictimg
 import cv2
+import easyocr
+reader=easyocr.Reader(['en'])
+
 allowed = ['GJ03ER0563']
 
 app = FastAPI()
