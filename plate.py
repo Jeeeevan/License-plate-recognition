@@ -166,5 +166,5 @@ def predictimg(modelYolo,modelVGG,src='tmp.jpg'):
         return 'yikers'
 
 
-# yolo, vgg = loadmodel()
-# predictimg(yolo, vgg)
+yolo, vgg = loadmodel()
+predictimg(yolo, vgg)
